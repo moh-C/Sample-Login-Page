@@ -1,9 +1,3 @@
-/**
- * Sources:
- * https://github.com/processing/p5.js
- * https://github.com/bit101/CodingMath
- */
-
 class Vector {
     constructor(x = 0, y = 0) {
         this.x = x;

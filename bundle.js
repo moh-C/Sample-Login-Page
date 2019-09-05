@@ -21,12 +21,12 @@
             [
                 Infinity // x
                 , Infinity // y
-                , 50 // dist
+                , 100 // dist
                 , 0.75 // spd
             ]
         ]
 
-        var canvas = document.createElement('canvas'),
+        var canvas = document.getElementById('myCanvas'),
             ctx = canvas.getContext('2d'),
             boids = Boids({
                 boids: 1000,
