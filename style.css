@@ -1,13 +1,27 @@
-body {
-    background: url('./background-blur-clean-531880.jpg');
-    background-size: cover;
+* {
+    padding: 0;
+    margin: 0
 }
+
+body {}
 
 .container-fluid {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    background: url('./background-blur-clean-531880.jpg') no-repeat;
+    background-size: cover;
+}
+
+#welcomeToLogin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 .whiteBackground {
@@ -17,42 +31,35 @@ body {
 }
 
 .background {
-    /*animation: myAnime 1s forwards 0s ease-in-out;*/
-    /*animation: backgroundTransform infinite 2s;*/
+    animation: myAnime 1s forwards 0s ease-in-out;
     width: 100%;
-    height: 700px;
+    height: 70vh;
     background: linear-gradient( #ff5f6d, #ffc371);
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
-    margin-top: calc((100vh - 700px)/2);
+    margin-top: calc((30vh)/2);
     padding: 12% 50px;
     overflow: hidden;
     color: black;
 }
 
 .background p {
+    text-align: center;
     animation: textAnime 2s forwards 0s ease-out;
+    font-size: 33px;
+    font-weight: bold;
 }
 
 @keyframes myAnime {
     from {
-        transform: translateY(25%);
+        transform: translateY(15%);
         opacity: 0;
     }
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes backgroundTransform {
-    from {
-        background-image: linear-gradient( #ff5f6d, #ffc371);
-    }
-    to {
-        background-image: linear-gradient(#ffc371, #ff5f6d);
     }
 }
 
