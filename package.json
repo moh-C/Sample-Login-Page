@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/moh-C/Sample-Login-Page#readme",
   "dependencies": {
+    "boids": "^2.0.0",
     "boids-canvas": "^1.1.1"
   }
 }
