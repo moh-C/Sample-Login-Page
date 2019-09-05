@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flocks</title>
+</head>
+
+<body>
+
+    <body>
+        <div id="boids-canvas"></div>
+        <script type="text/javascript" src="./node_modules/boids-canvas/boids-canvas.js"></script>
+        <script type="text/javascript">
+            var boidsCanvas = new BoidsCanvas(canvasDiv, options);
+            var options = {
+                background: '#ecf0f1',
+                density: 'medium',
+                speed: 'medium',
+                interactive: true,
+                mixedSizes: true,
+                boidColours: ["#34495e", "#e74c3c", '#2ecc71', '#9b59b6', '#f1c40f', '#1abc9c']
+            };
+            var canvasDiv = document.getElementById('boids-canvas');
+        </script>
+    </body>
+</body>
+
+</html>
