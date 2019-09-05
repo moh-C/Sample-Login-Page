@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="./bootstrap.css">
     <script src="./bootstrap.js"></script>
     <link rel="stylesheet" href="./style.css">
-    <script src="./blotter.js"></script>
-    <script src="./fliesMaterial.js"></script>
 </head>
 
 <body>
@@ -19,16 +17,24 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div class="col-md-8">
-                <h1 id="welcomeToLogin"></h1>
-            </div>
+            <div class="col-md-8"></div>
 
             <div class="col-md-4 whiteBackground">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <div class="background">
-
+                            <h1>Welcome Back!</h1>
+                            <div class="row">
+                                <div class="form-group formGroupWidener">
+                                    <input type="text" id="name" class="form-control" required>
+                                    <label class="form-control-placeholder" for="name">Name</label>
+                                </div>
+                                <div class="form-group formGroupWidener">
+                                    <input type="password" id="password" class="form-control" required>
+                                    <label class="form-control-placeholder" for="password">Password</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-1"></div>
@@ -36,26 +42,6 @@
             </div>
         </div>
     </div>
-    <script>
-        var text = new Blotter.Text("Welcome back!", {
-            size: 125,
-            fill: "#db7434"
-        })
-
-        var material = new Blotter.FliesMaterial();
-        material.uniforms.uPointCellWidth.value = 0.015;
-        material.uniforms.uPointRadius.value = 0.7;
-        material.uniforms.uSpeed.value = 20;
-
-
-        var blotter = new Blotter(material, {
-            texts: text
-        })
-
-        var scope = blotter.forText(text);
-
-        scope.appendTo(document.getElementById('welcomeToLogin'));
-    </script>
 </body>
 
 </html>

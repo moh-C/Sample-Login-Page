@@ -3,8 +3,6 @@
     margin: 0
 }
 
-body {}
-
 .container-fluid {
     position: absolute;
     top: 50%;
@@ -12,16 +10,6 @@ body {}
     transform: translate(-50%, -50%);
     background: url('./background-blur-clean-531880.jpg') no-repeat;
     background-size: cover;
-}
-
-#welcomeToLogin {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #eeeeee;
-    padding: 10px;
-    border-radius: 25px;
 }
 
 .whiteBackground {
@@ -39,17 +27,19 @@ body {}
     border-bottom-left-radius: 20px;
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
-    margin-top: calc((30vh)/2);
+    margin: calc((30vh)/2) 0;
     padding: 12% 50px;
     overflow: hidden;
     color: black;
 }
 
-.background p {
+.background h1 {
     text-align: center;
     animation: textAnime 2s forwards 0s ease-out;
-    font-size: 33px;
+    font-size: 35px;
     font-weight: bold;
+    margin-bottom: 25px;
+    border-bottom: #fce 2px solid;
 }
 
 @keyframes myAnime {
@@ -72,4 +62,28 @@ body {}
         opacity: 1;
         display: block;
     }
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.5;
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    font-size: 75%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+}
+
+.formGroupWidener {
+    width: 100%;
 }
