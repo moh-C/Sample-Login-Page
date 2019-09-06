@@ -25,7 +25,8 @@ body {
     background-image: url('./images/background-blur-clean-531880.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Ubuntu-Bold
+    font-family: Ubuntu-Bold;
+    min-height: 100vh;
 }
 
 .overlay {
@@ -48,6 +49,7 @@ body {
     left: 0;
     right: 0;
     margin-top: calc((100vh - 425px)/2);
+    animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
 }
 
 .container h1 {
@@ -55,6 +57,7 @@ body {
     font-family: Ubuntu-Bold;
     font-weight: 400;
     text-transform: uppercase;
+    transition: all 0.6s
 }
 
 .mainContainer {
@@ -102,11 +105,51 @@ span::after {
     content: "";
     display: block;
     width: 0px;
-    height: 1px;
+    height: 2px;
     background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
     transition: all 0.6s;
 }
 
 span.special::after {
     width: 390px;
+}
+
+input {
+    transition: all 0.6s;
+}
+
+button {
+    border-radius: 2em;
+    padding: 11px 50px;
+    margin: 30px;
+    font-family: Ubuntu-Bold;
+    font-size: 18px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #d41872;
+    border: 1px blue solid;
+    padding: 10px 49px
+}
+
+button:active {
+    position: relative;
+    top: 2px
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25%)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
 }
