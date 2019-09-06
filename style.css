@@ -1,3 +1,11 @@
+svg {
+    transition: all 0.6s;
+}
+
+#userIcon {
+    transition: all 0.6s;
+}
+
 @font-face {
     font-family: Ubuntu-Regular;
     src: url('./fonts/ubuntu/Ubuntu-Regular.ttf');
@@ -61,7 +69,12 @@ body {
     padding: 29px 0;
     border-bottom: #eee 1px solid;
     font-family: Ubuntu-Bold;
-    width: 100%
+    width: 100%;
+    transition: all 0.4s
+}
+
+.input::after {
+    border-bottom: 2px solid #fc3
 }
 
 .form-group {
@@ -81,5 +94,19 @@ body {
 }
 
 .input svg {
-    font-size: 17px
+    font-size: 18px
+}
+
+span::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1px;
+    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    transition: all 0.6s;
+}
+
+span.special::after {
+    width: 390px;
 }
