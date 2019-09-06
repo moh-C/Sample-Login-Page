@@ -56,3 +56,30 @@ body {
     border-radius: 15px;
     margin: 40px auto
 }
+
+.input {
+    padding: 29px 0;
+    border-bottom: #eee 1px solid;
+    font-family: Ubuntu-Bold;
+    width: 100%
+}
+
+.form-group {
+    padding-top: 10px;
+    padding-bottom: 25px
+}
+
+.input input {
+    box-sizing: border-box;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    width: 75%;
+    font-size: 15px
+}
+
+.input svg {
+    font-size: 17px
+}
