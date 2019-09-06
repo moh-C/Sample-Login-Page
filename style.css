@@ -134,8 +134,7 @@ button {
 button:hover {
     cursor: pointer;
     background: #d41872;
-    border: 1px blue solid;
-    padding: 10px 49px
+    padding: 11px 50px
 }
 
 button:active {
