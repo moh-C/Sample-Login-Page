@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./script.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="overlay"></div>
     <div class="container">
-        <h1>Welcome Back</h1>
-        <div class="mainContainer">
-            <form action="" class="form-group">
-                <div class="input" id="inputUsername">
-                    <i class="fas fa-user" id="userIcon"></i>
-                    <input type="text" name="username" id="username" placeholder="username">
-                </div>
-                <span id="first"></span>
-                <div class="input">
-                    <i class="fas fa-key" id="passIcon"></i>
-                    <input type="password" name="password" id="password" placeholder="password">
-                </div>
-                <span id="second"></span>
-                <button type="submit">SIGN IN</button>
-            </form>
-        </div>
+      <h1>Welcome Back</h1>
+      <div class="mainContainer">
+        <form action="" class="form-group">
+          <div class="input" id="inputUsername">
+            <i class="fas fa-user" id="userIcon"></i>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="username"
+            />
+          </div>
+          <span id="first"></span>
+          <div class="input">
+            <i class="fas fa-key" id="passIcon"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            />
+          </div>
+          <span id="second"></span>
+          <button type="submit">SIGN IN</button>
+        </form>
+      </div>
     </div>
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-</body>
-
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </body>
 </html>
